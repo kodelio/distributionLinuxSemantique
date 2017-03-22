@@ -1,0 +1,740 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ema.com/ontologies/series#"
+     xml:base="http://www.ema.com/ontologies/series"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:series="http://www.ema.com/ontologies/series#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.ema.com/ontologies/series"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#actsIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.ema.com/ontologies/series#actsIn">
+        <owl:inverseOf rdf:resource="http://www.ema.com/ontologies/series#hasActor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#hasActor -->
+
+    <owl:ObjectProperty rdf:about="http://www.ema.com/ontologies/series#hasActor">
+        <rdfs:domain rdf:resource="http://www.ema.com/ontologies/series#Serie"/>
+        <rdfs:range rdf:resource="http://www.ema.com/ontologies/series#Acteur"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#hasDistinction -->
+
+    <owl:ObjectProperty rdf:about="http://www.ema.com/ontologies/series#hasDistinction">
+        <owl:inverseOf rdf:resource="http://www.ema.com/ontologies/series#isDistinctionOf"/>
+        <rdfs:domain rdf:resource="http://www.ema.com/ontologies/series#Serie"/>
+        <rdfs:range rdf:resource="http://www.ema.com/ontologies/series#Distinction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#hasNationality -->
+
+    <owl:ObjectProperty rdf:about="http://www.ema.com/ontologies/series#hasNationality">
+        <owl:inverseOf rdf:resource="http://www.ema.com/ontologies/series#isNationalityOf"/>
+        <rdfs:domain rdf:resource="http://www.ema.com/ontologies/series#Serie"/>
+        <rdfs:range rdf:resource="http://www.ema.com/ontologies/series#Nationalite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#hasOriginalLanguage -->
+
+    <owl:ObjectProperty rdf:about="http://www.ema.com/ontologies/series#hasOriginalLanguage">
+        <owl:inverseOf rdf:resource="http://www.ema.com/ontologies/series#isSpokenIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#hasState -->
+
+    <owl:ObjectProperty rdf:about="http://www.ema.com/ontologies/series#hasState">
+        <owl:inverseOf rdf:resource="http://www.ema.com/ontologies/series#isStateOf"/>
+        <rdfs:domain rdf:resource="http://www.ema.com/ontologies/series#Serie"/>
+        <rdfs:range rdf:resource="http://www.ema.com/ontologies/series#Etat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#hasTheme -->
+
+    <owl:ObjectProperty rdf:about="http://www.ema.com/ontologies/series#hasTheme">
+        <owl:inverseOf rdf:resource="http://www.ema.com/ontologies/series#isThemOf"/>
+        <rdfs:domain rdf:resource="http://www.ema.com/ontologies/series#Serie"/>
+        <rdfs:range rdf:resource="http://www.ema.com/ontologies/series#Theme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#hosts -->
+
+    <owl:ObjectProperty rdf:about="http://www.ema.com/ontologies/series#hosts">
+        <owl:inverseOf rdf:resource="http://www.ema.com/ontologies/series#isAiredOn"/>
+        <rdfs:domain rdf:resource="http://www.ema.com/ontologies/series#SupportDiffusion"/>
+        <rdfs:range rdf:resource="http://www.ema.com/ontologies/series#Serie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#inspires -->
+
+    <owl:ObjectProperty rdf:about="http://www.ema.com/ontologies/series#inspires">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.ema.com/ontologies/series#isInspiredBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#isAiredOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.ema.com/ontologies/series#isAiredOn"/>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#isDistinctionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ema.com/ontologies/series#isDistinctionOf"/>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#isInspiredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ema.com/ontologies/series#isInspiredBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.ema.com/ontologies/series#Serie"/>
+        <rdfs:range rdf:resource="http://www.ema.com/ontologies/series#Inspiration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#isNationalityOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ema.com/ontologies/series#isNationalityOf"/>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#isProducedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ema.com/ontologies/series#isProducedBy">
+        <owl:inverseOf rdf:resource="http://www.ema.com/ontologies/series#produces"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#isRealisedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ema.com/ontologies/series#isRealisedBy">
+        <owl:inverseOf rdf:resource="http://www.ema.com/ontologies/series#realises"/>
+        <rdfs:domain rdf:resource="http://www.ema.com/ontologies/series#Serie"/>
+        <rdfs:range rdf:resource="http://www.ema.com/ontologies/series#Réalisateur"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#isSpokenIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.ema.com/ontologies/series#isSpokenIn">
+        <rdfs:domain rdf:resource="http://www.ema.com/ontologies/series#Langue"/>
+        <rdfs:range rdf:resource="http://www.ema.com/ontologies/series#Serie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#isStateOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ema.com/ontologies/series#isStateOf"/>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#isThemOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ema.com/ontologies/series#isThemOf"/>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#produces -->
+
+    <owl:ObjectProperty rdf:about="http://www.ema.com/ontologies/series#produces">
+        <rdfs:domain rdf:resource="http://www.ema.com/ontologies/series#Producteur"/>
+        <rdfs:range rdf:resource="http://www.ema.com/ontologies/series#Serie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#realises -->
+
+    <owl:ObjectProperty rdf:about="http://www.ema.com/ontologies/series#realises"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#anneeDebut -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ema.com/ontologies/series#anneeDebut"/>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#anneeFin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ema.com/ontologies/series#anneeFin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#dureeEpisode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ema.com/ontologies/series#dureeEpisode">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.ema.com/ontologies/series#Serie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#nbSaisons -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ema.com/ontologies/series#nbSaisons">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.ema.com/ontologies/series#Serie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#nbVues -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ema.com/ontologies/series#nbVues">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#note -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ema.com/ontologies/series#note">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Acteur -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#Acteur">
+        <rdfs:subClassOf rdf:resource="http://www.ema.com/ontologies/series#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Africaine -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#Africaine">
+        <rdfs:subClassOf rdf:resource="http://www.ema.com/ontologies/series#Nationalite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Americaine -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#Americaine">
+        <rdfs:subClassOf rdf:resource="http://www.ema.com/ontologies/series#Nationalite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Asiatique -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#Asiatique">
+        <rdfs:subClassOf rdf:resource="http://www.ema.com/ontologies/series#Nationalite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Box-Office -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#Box-Office">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ema.com/ontologies/series#Serie"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ema.com/ontologies/series#nbVues"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ema.com/ontologies/series#Serie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Distinction -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#Distinction"/>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Emmy -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#Emmy">
+        <rdfs:subClassOf rdf:resource="http://www.ema.com/ontologies/series#Distinction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Etat -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#Etat"/>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Europeenne -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#Europeenne">
+        <rdfs:subClassOf rdf:resource="http://www.ema.com/ontologies/series#Nationalite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Fait_Divers -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#Fait_Divers">
+        <rdfs:subClassOf rdf:resource="http://www.ema.com/ontologies/series#Fait_reel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Fait_Historique -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#Fait_Historique">
+        <rdfs:subClassOf rdf:resource="http://www.ema.com/ontologies/series#Fait_reel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Fait_reel -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#Fait_reel">
+        <rdfs:subClassOf rdf:resource="http://www.ema.com/ontologies/series#Inspiration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Film -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#Film">
+        <rdfs:subClassOf rdf:resource="http://www.ema.com/ontologies/series#Inspiration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#GoldenGlobe -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#GoldenGlobe">
+        <rdfs:subClassOf rdf:resource="http://www.ema.com/ontologies/series#Distinction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Inspiration -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#Inspiration"/>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Langue -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#Langue"/>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Legende -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#Legende">
+        <rdfs:subClassOf rdf:resource="http://www.ema.com/ontologies/series#Inspiration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Livre -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#Livre">
+        <rdfs:subClassOf rdf:resource="http://www.ema.com/ontologies/series#Inspiration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#LongSeries -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#LongSeries">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ema.com/ontologies/series#Serie"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ema.com/ontologies/series#nbSaisons"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ema.com/ontologies/series#Serie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#MeilleureCritique -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#MeilleureCritique">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ema.com/ontologies/series#Serie"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ema.com/ontologies/series#note"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ema.com/ontologies/series#Serie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Mini-Serie -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#Mini-Serie">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ema.com/ontologies/series#Serie"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ema.com/ontologies/series#nbSaisons"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ema.com/ontologies/series#Serie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Nationalite -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#Nationalite"/>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Peabody -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#Peabody">
+        <rdfs:subClassOf rdf:resource="http://www.ema.com/ontologies/series#Distinction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Personne -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#Personne"/>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Producteur -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#Producteur">
+        <rdfs:subClassOf rdf:resource="http://www.ema.com/ontologies/series#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Réalisateur -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#Réalisateur">
+        <rdfs:subClassOf rdf:resource="http://www.ema.com/ontologies/series#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Serie -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#Serie"/>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Serie-TV -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#Serie-TV">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ema.com/ontologies/series#isAiredOn"/>
+                <owl:hasValue rdf:resource="http://www.ema.com/ontologies/series#TV"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ema.com/ontologies/series#Serie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Serie-Web -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#Serie-Web">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ema.com/ontologies/series#isAiredOn"/>
+                <owl:hasValue rdf:resource="http://www.ema.com/ontologies/series#Web"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ema.com/ontologies/series#Serie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#SerieDureeCourte -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#SerieDureeCourte">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ema.com/ontologies/series#dureeEpisode"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#SerieDureeLongue -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#SerieDureeLongue">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ema.com/ontologies/series#dureeEpisode"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#SerieDureeMoyenne -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#SerieDureeMoyenne">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ema.com/ontologies/series#dureeEpisode"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:intersectionOf>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#SupportDiffusion -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#SupportDiffusion"/>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Theme -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#Theme"/>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Top-Serie -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#Top-Serie">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ema.com/ontologies/series#hasDistinction"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ema.com/ontologies/series#Distinction"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ema.com/ontologies/series#Serie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#TopActeur -->
+
+    <owl:Class rdf:about="http://www.ema.com/ontologies/series#TopActeur">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ema.com/ontologies/series#actsIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.ema.com/ontologies/series#Box-Office"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ema.com/ontologies/series#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#LongSerieTest -->
+
+    <owl:Thing rdf:about="http://www.ema.com/ontologies/series#LongSerieTest">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <nbSaisons rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</nbSaisons>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#TV -->
+
+    <owl:NamedIndividual rdf:about="http://www.ema.com/ontologies/series#TV"/>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#Web -->
+
+    <owl:NamedIndividual rdf:about="http://www.ema.com/ontologies/series#Web"/>
+    
+
+
+    <!-- http://www.ema.com/ontologies/series#test -->
+
+    <owl:Thing rdf:about="http://www.ema.com/ontologies/series#test">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <nbSaisons rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nbSaisons>
+    </owl:Thing>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,390 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sharispe/ontologies/2017/0/untitled-ontology-25#"
+     xml:base="http://www.semanticweb.org/sharispe/ontologies/2017/0/untitled-ontology-25"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:untitled-ontology-25="http://www.semanticweb.org/sharispe/ontologies/2017/0/untitled-ontology-25#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:authors="http://www.ema.org/ontologies/authors#">
+    <owl:Ontology rdf:about="http://www.ema.org/ontologies/authors"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#aPourAuteur -->
+
+    <owl:ObjectProperty rdf:about="http://www.ema.org/ontologies/authors#aPourAuteur">
+        <owl:inverseOf rdf:resource="http://www.ema.org/ontologies/authors#estAuteurDe"/>
+        <rdfs:domain rdf:resource="http://www.ema.org/ontologies/authors#Oeuvre"/>
+        <rdfs:range rdf:resource="http://www.ema.org/ontologies/authors#Auteur"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#aPourTheme -->
+
+    <owl:ObjectProperty rdf:about="http://www.ema.org/ontologies/authors#aPourTheme">
+        <rdfs:domain rdf:resource="http://www.ema.org/ontologies/authors#Oeuvre"/>
+        <rdfs:range rdf:resource="http://www.ema.org/ontologies/authors#Theme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#estAuteurDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.ema.org/ontologies/authors#estAuteurDe"/>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#sousThemeDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.ema.org/ontologies/authors#sousThemeDe">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.ema.org/ontologies/authors#Theme"/>
+        <rdfs:range rdf:resource="http://www.ema.org/ontologies/authors#Theme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#nombreDeVentes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ema.org/ontologies/authors#nombreDeVentes">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.ema.org/ontologies/authors#Oeuvre"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#Auteur -->
+
+    <owl:Class rdf:about="http://www.ema.org/ontologies/authors#Auteur">
+        <owl:disjointWith rdf:resource="http://www.ema.org/ontologies/authors#Oeuvre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#BD -->
+
+    <owl:Class rdf:about="http://www.ema.org/ontologies/authors#BD">
+        <rdfs:subClassOf rdf:resource="http://www.ema.org/ontologies/authors#Oeuvre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#BestSeller -->
+
+    <owl:Class rdf:about="http://www.ema.org/ontologies/authors#BestSeller">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ema.org/ontologies/authors#Oeuvre"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ema.org/ontologies/authors#nombreDeVentes"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5000</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#Essai -->
+
+    <owl:Class rdf:about="http://www.ema.org/ontologies/authors#Essai">
+        <rdfs:subClassOf rdf:resource="http://www.ema.org/ontologies/authors#Livre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#Livre -->
+
+    <owl:Class rdf:about="http://www.ema.org/ontologies/authors#Livre">
+        <rdfs:subClassOf rdf:resource="http://www.ema.org/ontologies/authors#Oeuvre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#Oeuvre -->
+
+    <owl:Class rdf:about="http://www.ema.org/ontologies/authors#Oeuvre"/>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#OeuvreSciences -->
+
+    <owl:Class rdf:about="http://www.ema.org/ontologies/authors#OeuvreSciences">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.ema.org/ontologies/authors#Oeuvre"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ema.org/ontologies/authors#aPourTheme"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ema.org/ontologies/authors#sousThemeDe"/>
+                                <owl:hasValue rdf:resource="http://www.ema.org/ontologies/authors#Sciences"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ema.org/ontologies/authors#Oeuvre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#Roman -->
+
+    <owl:Class rdf:about="http://www.ema.org/ontologies/authors#Roman">
+        <rdfs:subClassOf rdf:resource="http://www.ema.org/ontologies/authors#Livre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#Theme -->
+
+    <owl:Class rdf:about="http://www.ema.org/ontologies/authors#Theme"/>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#ThemeScientifique -->
+
+    <owl:Class rdf:about="http://www.ema.org/ontologies/authors#ThemeScientifique">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ema.org/ontologies/authors#sousThemeDe"/>
+                <owl:hasValue rdf:resource="http://www.ema.org/ontologies/authors#Sciences"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ema.org/ontologies/authors#Theme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#TopAuteur -->
+
+    <owl:Class rdf:about="http://www.ema.org/ontologies/authors#TopAuteur">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ema.org/ontologies/authors#Auteur"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ema.org/ontologies/authors#estAuteurDe"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ema.org/ontologies/authors#BestSeller"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#Aventure -->
+
+    <owl:NamedIndividual rdf:about="http://www.ema.org/ontologies/authors#Aventure">
+        <rdf:type rdf:resource="http://www.ema.org/ontologies/authors#Theme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#Candide -->
+
+    <owl:NamedIndividual rdf:about="http://www.ema.org/ontologies/authors#Candide">
+        <authors:aPourAuteur rdf:resource="http://www.ema.org/ontologies/authors#Voltaire"/>
+        <authors:nombreDeVentes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000</authors:nombreDeVentes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#Euclide -->
+
+    <owl:NamedIndividual rdf:about="http://www.ema.org/ontologies/authors#Euclide"/>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#Geometrie -->
+
+    <owl:NamedIndividual rdf:about="http://www.ema.org/ontologies/authors#Geometrie">
+        <rdf:type rdf:resource="http://www.ema.org/ontologies/authors#Theme"/>
+        <authors:sousThemeDe rdf:resource="http://www.ema.org/ontologies/authors#Math"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#Herge -->
+
+    <owl:NamedIndividual rdf:about="http://www.ema.org/ontologies/authors#Herge">
+        <rdf:type rdf:resource="http://www.ema.org/ontologies/authors#Auteur"/>
+        <rdfs:label xml:lang="en">Hergé</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#LEsElements -->
+
+    <owl:NamedIndividual rdf:about="http://www.ema.org/ontologies/authors#LEsElements">
+        <authors:aPourAuteur rdf:resource="http://www.ema.org/ontologies/authors#Euclide"/>
+        <authors:aPourTheme rdf:resource="http://www.ema.org/ontologies/authors#Geometrie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#Marx -->
+
+    <owl:NamedIndividual rdf:about="http://www.ema.org/ontologies/authors#Marx">
+        <rdf:type rdf:resource="http://www.ema.org/ontologies/authors#Auteur"/>
+        <authors:estAuteurDe rdf:resource="http://www.ema.org/ontologies/authors#daz_kapital"/>
+        <rdfs:label xml:lang="en">Karl Marx</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#Math -->
+
+    <owl:NamedIndividual rdf:about="http://www.ema.org/ontologies/authors#Math">
+        <rdf:type rdf:resource="http://www.ema.org/ontologies/authors#Theme"/>
+        <authors:sousThemeDe rdf:resource="http://www.ema.org/ontologies/authors#Sciences"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#Morin -->
+
+    <owl:NamedIndividual rdf:about="http://www.ema.org/ontologies/authors#Morin">
+        <rdf:type rdf:resource="http://www.ema.org/ontologies/authors#Auteur"/>
+        <rdfs:label xml:lang="en">Edgar Morin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#Physique -->
+
+    <owl:NamedIndividual rdf:about="http://www.ema.org/ontologies/authors#Physique">
+        <rdf:type rdf:resource="http://www.ema.org/ontologies/authors#Theme"/>
+        <authors:sousThemeDe rdf:resource="http://www.ema.org/ontologies/authors#Sciences"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#SML -->
+
+    <owl:NamedIndividual rdf:about="http://www.ema.org/ontologies/authors#SML">
+        <authors:aPourTheme rdf:resource="http://www.ema.org/ontologies/authors#Math"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#Sciences -->
+
+    <owl:NamedIndividual rdf:about="http://www.ema.org/ontologies/authors#Sciences">
+        <rdf:type rdf:resource="http://www.ema.org/ontologies/authors#Theme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#Voltaire -->
+
+    <owl:NamedIndividual rdf:about="http://www.ema.org/ontologies/authors#Voltaire"/>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#daz_kapital -->
+
+    <owl:NamedIndividual rdf:about="http://www.ema.org/ontologies/authors#daz_kapital">
+        <rdf:type rdf:resource="http://www.ema.org/ontologies/authors#Oeuvre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#la_methode -->
+
+    <owl:NamedIndividual rdf:about="http://www.ema.org/ontologies/authors#la_methode">
+        <rdf:type rdf:resource="http://www.ema.org/ontologies/authors#Oeuvre"/>
+        <authors:aPourAuteur rdf:resource="http://www.ema.org/ontologies/authors#Morin"/>
+        <authors:nombreDeVentes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">560</authors:nombreDeVentes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#sharispe -->
+
+    <owl:NamedIndividual rdf:about="http://www.ema.org/ontologies/authors#sharispe">
+        <rdf:type rdf:resource="http://www.ema.org/ontologies/authors#Auteur"/>
+        <authors:estAuteurDe rdf:resource="http://www.ema.org/ontologies/authors#SML"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ema.org/ontologies/authors#tintin_au_tibet -->
+
+    <owl:NamedIndividual rdf:about="http://www.ema.org/ontologies/authors#tintin_au_tibet">
+        <rdf:type rdf:resource="http://www.ema.org/ontologies/authors#Oeuvre"/>
+        <authors:aPourAuteur rdf:resource="http://www.ema.org/ontologies/authors#Herge"/>
+        <authors:aPourTheme rdf:resource="http://www.ema.org/ontologies/authors#Aventure"/>
+        <authors:nombreDeVentes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5020</authors:nombreDeVentes>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
