@@ -38,7 +38,6 @@ public class MainPelletTest {
     }
 
     public static void main(String[] args) {
-
         String onto_file = System.getProperty("user.dir") + "/resources/seriev7.owl";
         String data_file = System.getProperty("user.dir") + "/resources/datav1.nt";
 
