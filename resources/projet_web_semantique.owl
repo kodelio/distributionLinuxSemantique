@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#"
-     xml:base="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5"
+<rdf:RDF xmlns="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#"
+     xml:base="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:untitled-ontology-5="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#">
+     xmlns:untitled-ontology-5="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#">
     <owl:Ontology rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux"/>
     
 
@@ -22,57 +22,57 @@
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#baseeSur -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#baseeSur -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#baseeSur">
+    <owl:ObjectProperty rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#baseeSur">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Distribution"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Distribution"/>
+        <rdfs:domain rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Distribution"/>
+        <rdfs:range rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Distribution"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#maintenuePar -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#maintenuePar -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#maintenuePar">
+    <owl:ObjectProperty rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#maintenuePar">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Distribution"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Mainteneur"/>
+        <rdfs:domain rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Distribution"/>
+        <rdfs:range rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Mainteneur"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#miseAJourTousLes -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#miseAJourTousLes -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#miseAJourTousLes"/>
+    <owl:ObjectProperty rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#miseAJourTousLes"/>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#modeleEconomiqueEst -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#modeleEconomiqueEst -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#modeleEconomiqueEst">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Distribution"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#ModeleEconomique"/>
+    <owl:ObjectProperty rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#modeleEconomiqueEst">
+        <rdfs:domain rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Distribution"/>
+        <rdfs:range rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#ModeleEconomique"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#supporteArchitecture -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#supporteArchitecture -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#supporteArchitecture">
+    <owl:ObjectProperty rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#supporteArchitecture">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Distribution"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Architecture"/>
+        <rdfs:domain rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Distribution"/>
+        <rdfs:range rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Architecture"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#supporteLaLangue -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#supporteLaLangue -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#supporteLaLangue">
+    <owl:ObjectProperty rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#supporteLaLangue">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Distribution"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Langue"/>
+        <rdfs:domain rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Distribution"/>
+        <rdfs:range rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Langue"/>
     </owl:ObjectProperty>
     
 
@@ -88,9 +88,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#noteSecurite -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#noteSecurite -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#noteSecurite">
+    <owl:DatatypeProperty rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#noteSecurite">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range>
             <rdfs:Datatype>
@@ -118,9 +118,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#noteStabilite -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#noteStabilite -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#noteStabilite">
+    <owl:DatatypeProperty rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#noteStabilite">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range>
             <rdfs:Datatype>
@@ -159,55 +159,55 @@
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Architecture -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Architecture -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Architecture">
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Distribution"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Focus"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#FrequenceMiseAJour"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Langue"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Mainteneur"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#ModeleEconomique"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Profil"/>
+    <owl:Class rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Architecture">
+        <owl:disjointWith rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Distribution"/>
+        <owl:disjointWith rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Focus"/>
+        <owl:disjointWith rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#FrequenceMiseAJour"/>
+        <owl:disjointWith rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Langue"/>
+        <owl:disjointWith rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Mainteneur"/>
+        <owl:disjointWith rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#ModeleEconomique"/>
+        <owl:disjointWith rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Profil"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Communaute -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Communaute -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Communaute">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Mainteneur"/>
+    <owl:Class rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Communaute">
+        <rdfs:subClassOf rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Mainteneur"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Distribution -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Distribution -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Distribution">
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Focus"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#FrequenceMiseAJour"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Langue"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Mainteneur"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#ModeleEconomique"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Profil"/>
+    <owl:Class rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Distribution">
+        <owl:disjointWith rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Focus"/>
+        <owl:disjointWith rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#FrequenceMiseAJour"/>
+        <owl:disjointWith rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Langue"/>
+        <owl:disjointWith rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Mainteneur"/>
+        <owl:disjointWith rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#ModeleEconomique"/>
+        <owl:disjointWith rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Profil"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Entreprise -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Entreprise -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Entreprise">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Mainteneur"/>
+    <owl:Class rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Entreprise">
+        <rdfs:subClassOf rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Mainteneur"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Etudiant -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Etudiant -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Etudiant">
+    <owl:Class rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Etudiant">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#noteSecurite"/>
+                <owl:onProperty rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#noteSecurite"/>
                 <owl:someValuesFrom>
                     <rdfs:Datatype>
                         <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
@@ -220,64 +220,64 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Profil"/>
+        <rdfs:subClassOf rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Profil"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Focus -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Focus -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Focus">
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#FrequenceMiseAJour"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Langue"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Mainteneur"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#ModeleEconomique"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Profil"/>
+    <owl:Class rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Focus">
+        <owl:disjointWith rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#FrequenceMiseAJour"/>
+        <owl:disjointWith rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Langue"/>
+        <owl:disjointWith rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Mainteneur"/>
+        <owl:disjointWith rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#ModeleEconomique"/>
+        <owl:disjointWith rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Profil"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#FrequenceMiseAJour -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#FrequenceMiseAJour -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#FrequenceMiseAJour">
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Langue"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Mainteneur"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#ModeleEconomique"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Profil"/>
+    <owl:Class rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#FrequenceMiseAJour">
+        <owl:disjointWith rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Langue"/>
+        <owl:disjointWith rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Mainteneur"/>
+        <owl:disjointWith rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#ModeleEconomique"/>
+        <owl:disjointWith rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Profil"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Langue -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Langue -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Langue">
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Mainteneur"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#ModeleEconomique"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Profil"/>
+    <owl:Class rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Langue">
+        <owl:disjointWith rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Mainteneur"/>
+        <owl:disjointWith rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#ModeleEconomique"/>
+        <owl:disjointWith rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Profil"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Mainteneur -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Mainteneur -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Mainteneur">
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#ModeleEconomique"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Profil"/>
+    <owl:Class rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Mainteneur">
+        <owl:disjointWith rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#ModeleEconomique"/>
+        <owl:disjointWith rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Profil"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#ModeleEconomique -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#ModeleEconomique -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#ModeleEconomique">
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Profil"/>
+    <owl:Class rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#ModeleEconomique">
+        <owl:disjointWith rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Profil"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Profil -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Profil -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Profil"/>
+    <owl:Class rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Profil"/>
     
 
 
@@ -292,267 +292,267 @@
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#ARM -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#ARM -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#ARM">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Architecture"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#ARM">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Architecture"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Anglais -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Anglais -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Anglais">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Langue"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Anglais">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Langue"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Arch_Linux -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Arch_Linux -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Arch_Linux">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Distribution"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Arch_Linux">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Distribution"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Canonical -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Canonical -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Canonical">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Entreprise"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Canonical">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Entreprise"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Communaute -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Communaute -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Communaute">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Communaute"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Communaute">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Communaute"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Debian -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Debian -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Debian">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Distribution"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Debian">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Distribution"/>
         <noteStabilite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</noteStabilite>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#ElementaryOS -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#ElementaryOS -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#ElementaryOS">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Distribution"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#ElementaryOS">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Distribution"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Fedora -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Fedora -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Fedora">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Distribution"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Fedora">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Distribution"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Français -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Français -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Français">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Langue"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Français">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Langue"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#FreeBSD -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#FreeBSD -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#FreeBSD">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Distribution"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#FreeBSD">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Distribution"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Gratuit -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Gratuit -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Gratuit">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#ModeleEconomique"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Gratuit">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#ModeleEconomique"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#MIPS -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#MIPS -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#MIPS">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Architecture"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#MIPS">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Architecture"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Payant -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Payant -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Payant">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#ModeleEconomique"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Payant">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#ModeleEconomique"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#PowerPC -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#PowerPC -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#PowerPC">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Architecture"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#PowerPC">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Architecture"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Red_Hat -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Red_Hat -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Red_Hat">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Entreprise"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Red_Hat">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Entreprise"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Red_Hat_Enterprise_Linux -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Red_Hat_Enterprise_Linux -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Red_Hat_Enterprise_Linux">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Distribution"/>
-        <maintenuePar rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Red_Hat"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Red_Hat_Enterprise_Linux">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Distribution"/>
+        <maintenuePar rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Red_Hat"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Russe -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Russe -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Russe">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Langue"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Russe">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Langue"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Slackware -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Slackware -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Slackware">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Distribution"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Slackware">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Distribution"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Ubuntu -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Ubuntu -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Ubuntu">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Distribution"/>
-        <baseeSur rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Debian"/>
-        <maintenuePar rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Canonical"/>
-        <maintenuePar rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Communaute"/>
-        <supporteArchitecture rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#x64"/>
-        <supporteLaLangue rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Français"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Ubuntu">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Distribution"/>
+        <baseeSur rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Debian"/>
+        <maintenuePar rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Canonical"/>
+        <maintenuePar rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Communaute"/>
+        <supporteArchitecture rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#x64"/>
+        <supporteLaLangue rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Français"/>
         <noteSecurite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</noteSecurite>
         <noteStabilite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</noteStabilite>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#elegance -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#elegance -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#elegance">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Focus"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#elegance">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Focus"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#fiabilite -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#fiabilite -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#fiabilite">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Focus"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#fiabilite">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Focus"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#niveauExpertise -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#niveauExpertise -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#niveauExpertise">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Focus"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#niveauExpertise">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Focus"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#openSource -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#openSource -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#openSource">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Focus"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#openSource">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Focus"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#personnalisation -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#personnalisation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#personnalisation">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Focus"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#personnalisation">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Focus"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#popularite -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#popularite -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#popularite">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Focus"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#popularite">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Focus"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#rapidite -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#rapidite -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#rapidite">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Focus"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#rapidite">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Focus"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#security -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#security -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#security">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Focus"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#security">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Focus"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#stabilite -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#stabilite -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#stabilite">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Focus"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#stabilite">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Focus"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#supportLongTerme -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#supportLongTerme -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#supportLongTerme">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Focus"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#supportLongTerme">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Focus"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#system_z -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#system_z -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#system_z">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Architecture"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#system_z">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Architecture"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#x64 -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#x64 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#x64">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Architecture"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#x64">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Architecture"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#x86 -->
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#x86 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#x86">
-        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Architecture"/>
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#x86">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Architecture"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 

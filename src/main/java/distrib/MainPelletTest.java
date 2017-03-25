@@ -19,10 +19,6 @@ import org.apache.jena.reasoner.Reasoner;
 import org.apache.jena.reasoner.ReasonerRegistry;
 import org.apache.jena.riot.RDFDataMgr;
 
-/**
- *
- * @author sharispe
- */
 public class MainPelletTest {
 
     public static void performSPARQLQuery(Model model, String queryString) {
