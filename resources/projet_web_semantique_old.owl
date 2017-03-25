@@ -7,7 +7,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:untitled-ontology-5="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#">
-    <owl:Ontology rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5"/>
     
 
 
@@ -32,6 +32,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#hasNote -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#hasNote">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Distribution"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Note"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#maintenuePar -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#maintenuePar">
@@ -42,27 +51,12 @@
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#miseAJourTousLes -->
+    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#noteAttribute -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#miseAJourTousLes"/>
-    
-
-
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#modeleEconomiqueEst -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#modeleEconomiqueEst">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Distribution"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#ModeleEconomique"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#supporteArchitecture -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#supporteArchitecture">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Distribution"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Architecture"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#noteAttribute">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Note"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Focus"/>
     </owl:ObjectProperty>
     
 
@@ -88,40 +82,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#noteSecurite -->
+    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#value -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#noteSecurite">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:range>
-            <rdfs:Datatype>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdfs:Datatype>
-                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-                        <owl:withRestrictions rdf:parseType="Collection">
-                            <rdf:Description>
-                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
-                            </rdf:Description>
-                        </owl:withRestrictions>
-                    </rdfs:Datatype>
-                    <rdfs:Datatype>
-                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-                        <owl:withRestrictions rdf:parseType="Collection">
-                            <rdf:Description>
-                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</xsd:maxInclusive>
-                            </rdf:Description>
-                        </owl:withRestrictions>
-                    </rdfs:Datatype>
-                </owl:intersectionOf>
-            </rdfs:Datatype>
-        </rdfs:range>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#noteStabilite -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#noteStabilite">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#value">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -168,7 +132,7 @@
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Langue"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Mainteneur"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#ModeleEconomique"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Profil"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Note"/>
     </owl:Class>
     
 
@@ -189,7 +153,7 @@
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Langue"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Mainteneur"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#ModeleEconomique"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Profil"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Note"/>
     </owl:Class>
     
 
@@ -202,29 +166,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Etudiant -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Etudiant">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#noteSecurite"/>
-                <owl:someValuesFrom>
-                    <rdfs:Datatype>
-                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-                        <owl:withRestrictions rdf:parseType="Collection">
-                            <rdf:Description>
-                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</xsd:minInclusive>
-                            </rdf:Description>
-                        </owl:withRestrictions>
-                    </rdfs:Datatype>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Profil"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Focus -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Focus">
@@ -232,7 +173,7 @@
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Langue"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Mainteneur"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#ModeleEconomique"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Profil"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Note"/>
     </owl:Class>
     
 
@@ -243,7 +184,7 @@
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Langue"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Mainteneur"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#ModeleEconomique"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Profil"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Note"/>
     </owl:Class>
     
 
@@ -253,7 +194,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Langue">
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Mainteneur"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#ModeleEconomique"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Profil"/>
     </owl:Class>
     
 
@@ -262,7 +202,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Mainteneur">
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#ModeleEconomique"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Profil"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Note"/>
     </owl:Class>
     
 
@@ -270,14 +210,14 @@
     <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#ModeleEconomique -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#ModeleEconomique">
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Profil"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Note"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Profil -->
+    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Note -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Profil"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Note"/>
     
 
 
@@ -336,7 +276,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Debian">
         <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Distribution"/>
-        <noteStabilite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</noteStabilite>
+        <hasNote rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#n0"/>
     </owl:NamedIndividual>
     
 
@@ -443,12 +383,10 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Ubuntu">
         <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Distribution"/>
         <baseeSur rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Debian"/>
+        <hasNote rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#noteUbuntuSecurity"/>
         <maintenuePar rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Canonical"/>
         <maintenuePar rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Communaute"/>
-        <supporteArchitecture rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#x64"/>
         <supporteLaLangue rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Français"/>
-        <noteSecurite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</noteSecurite>
-        <noteStabilite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</noteStabilite>
     </owl:NamedIndividual>
     
 
@@ -469,10 +407,50 @@
     
 
 
+    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#n0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#n0">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Note"/>
+        <noteAttribute rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#security"/>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#niveauExpertise -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#niveauExpertise">
         <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Focus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#noteUbuntuElegance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#noteUbuntuElegance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Note"/>
+        <noteAttribute rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#elegance"/>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#noteUbuntuPopularite -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#noteUbuntuPopularite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Note"/>
+        <noteAttribute rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#popularite"/>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#noteUbuntuSecurity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#noteUbuntuSecurity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#Note"/>
+        <noteAttribute rdf:resource="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5#security"/>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</value>
     </owl:NamedIndividual>
     
 
