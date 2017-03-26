@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 
+import openllet.jena.PelletReasonerFactory;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntClass;
 import org.apache.jena.ontology.OntModel;
@@ -112,15 +113,18 @@ public class App extends JFrame implements ActionListener {
         Model model = RDFDataMgr.loadModel(onto_file);
 
         //https://jena.apache.org/documentation/query/app_api.html
-        String queryA = "SELECT ?distribution WHERE { ?distribution <"+ NS +"baseeSur>  'Debian' }";
-        System.out.println(queryA);
+        String queryA = "SELECT ?distribution WHERE { ?distribution a <" + NS + "Distribution> . ?distribution <" + NS + "baseeSur>  <" + NS + "Debian> }";
 
-        performSPARQLQuery(model, queryA);
+        //performSPARQLQuery(model, queryA);
 
         // reasoner
-        Reasoner reasoner = ReasonerRegistry.getOWLReasoner();
-        InfModel inf = ModelFactory.createInfModel(reasoner, model);
+//        Reasoner reasoner = ReasonerRegistry.getOWLReasoner();
+//        InfModel inf = ModelFactory.createInfModel(reasoner, model);
+//
+//        performSPARQLQuery(inf, queryA);
 
-        performSPARQLQuery(inf, queryA);
+        Reasoner reasonerPellet = PelletReasonerFactory.theInstance().create();
+        InfModel infOpenllet = ModelFactory.createInfModel(reasonerPellet, model);
+        //performSPARQLQuery(infOpenllet, queryA);
     }
 }
