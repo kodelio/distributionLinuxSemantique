@@ -4,8 +4,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 import java.util.ArrayList;
 
 import org.apache.jena.ontology.Individual;
@@ -114,8 +112,8 @@ public class App extends JFrame implements ActionListener {
         Model model = RDFDataMgr.loadModel(onto_file);
 
         //https://jena.apache.org/documentation/query/app_api.html
-        String queryA = "SELECT ?distribution WHERE { ?distribution <"+ NS +"supporteLaLangue>  'Français' }";
-
+        String queryA = "SELECT ?distribution WHERE { ?distribution <"+ NS +"baseeSur>  'Debian' }";
+        System.out.println(queryA);
 
         performSPARQLQuery(model, queryA);
 

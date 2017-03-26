@@ -88,6 +88,120 @@
     
 
 
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#noteElegance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#noteElegance">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#noteFiabilite -->
+
+    <owl:DatatypeProperty rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#noteFiabilite">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#noteNiveauExpertise -->
+
+    <owl:DatatypeProperty rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#noteNiveauExpertise">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#noteOpenSource -->
+
+    <owl:DatatypeProperty rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#noteOpenSource"/>
+    
+
+
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#notePersonnalisation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#notePersonnalisation"/>
+    
+
+
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#notePopularite -->
+
+    <owl:DatatypeProperty rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#notePopularite"/>
+    
+
+
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#noteRapidite -->
+
+    <owl:DatatypeProperty rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#noteRapidite"/>
+    
+
+
     <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#noteSecurite -->
 
     <owl:DatatypeProperty rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#noteSecurite">
@@ -145,6 +259,12 @@
             </rdfs:Datatype>
         </rdfs:range>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#noteSupportLongTerme -->
+
+    <owl:DatatypeProperty rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#noteSupportLongTerme"/>
     
 
 
@@ -336,6 +456,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Debian">
         <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Distribution"/>
+        <noteSecurite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</noteSecurite>
         <noteStabilite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</noteStabilite>
     </owl:NamedIndividual>
     
@@ -537,6 +658,14 @@
 
     <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#system_z">
         <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Architecture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#tousLesAns -->
+
+    <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#tousLesAns">
+        <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#FrequenceMiseAJour"/>
     </owl:NamedIndividual>
     
 
