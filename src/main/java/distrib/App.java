@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import java.util.ArrayList;
+import java.util.*;
 
 import openllet.jena.PelletReasonerFactory;
 import org.apache.jena.ontology.Individual;
@@ -14,8 +14,8 @@ import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.InfModel;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.rdf.model.RDFNode;
 import org.apache.jena.reasoner.Reasoner;
-import org.apache.jena.reasoner.ReasonerRegistry;
 import org.apache.jena.riot.RDFDataMgr;
 import org.apache.jena.util.iterator.ExtendedIterator;
 
@@ -30,8 +30,26 @@ public class App extends JFrame implements ActionListener {
         Query query = QueryFactory.create(queryString);
         try (QueryExecution qexec = QueryExecutionFactory.create(query, model)) {
             ResultSet results = qexec.execSelect();
+            //ResultSetFormatter.out(System.out, results, query);
+            ArrayList<String> arR = new ArrayList<String>();
+            while(results.hasNext()) {
 
-            ResultSetFormatter.out(System.out, results, query);
+                QuerySolution row = (QuerySolution) results.next();
+
+                RDFNode c = row.get("?profil");
+                arR.add(c.toString());
+            }
+            if (arR.isEmpty()) {
+                JOptionPane.showMessageDialog(null, "Linux n'est peut etre pas adapté à tes besoins");
+            } else {
+
+                StringBuilder sb = new StringBuilder();
+                sb.append("La ou les distributions possibles :\n");
+                for (String var : arR) {
+                    sb.append(var.replace(NS, "")).append("\n");
+                }
+                JOptionPane.showMessageDialog(null, sb);
+            }
         }
     }
 
@@ -39,6 +57,7 @@ public class App extends JFrame implements ActionListener {
         super();
 
         JLabel titre = new JLabel("Quelle distribution Linux choisir ? Sélectionne ton profil parmi les suivants :",JLabel.CENTER);
+        titre.setFont(new Font("Dialog", Font.PLAIN, 20));
         this.getContentPane().add(titre, BorderLayout.NORTH);
 
         JPanel panel = new JPanel(new GridLayout(4,2));
@@ -62,7 +81,7 @@ public class App extends JFrame implements ActionListener {
                     profiles.add(thisSubClass.toString().replace(NS, ""));
                 }
                 for (String st : profiles) {
-                    JButton jb = new JButton(st);
+                    JButton jb = new JButton("Profil : " + st);
                     jb.addActionListener(this);
                     panel.add(jb);
                 }
@@ -76,9 +95,11 @@ public class App extends JFrame implements ActionListener {
                     distribs.add(thisInstance.toString().replace(NS, ""));
                 }
                 JLabel allDistrib = new JLabel(" Toutes les distributions :");
+                allDistrib.setFont(new Font("Dialog", Font.PLAIN, 20));
                 panelBottom1.add(allDistrib);
                 for (String st : distribs) {
                     JButton jb = new JButton(st);
+                    jb.addActionListener(this);
                     panelBottom2.add(jb);
                 }
             }
@@ -108,23 +129,23 @@ public class App extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent e){
         JButton obj = (JButton) e.getSource();
-        System.out.println(obj.getText());
+        System.out.println("Séléction utilisateur : " + obj.getText());
 
         Model model = RDFDataMgr.loadModel(onto_file);
 
-        //https://jena.apache.org/documentation/query/app_api.html
-        String queryA = "SELECT ?distribution WHERE { ?distribution a <" + NS + "Distribution> . ?distribution <" + NS + "baseeSur>  <" + NS + "Debian> }";
+        if (obj.getText().contains("Profil")) {
 
-        //performSPARQLQuery(model, queryA);
+            //https://jena.apache.org/documentation/query/app_api.html
+            String queryA = "SELECT ?profil WHERE { ?profil a <" + NS + obj.getText().replace("Profil : ", "") +"> }";
 
-        // reasoner
-//        Reasoner reasoner = ReasonerRegistry.getOWLReasoner();
-//        InfModel inf = ModelFactory.createInfModel(reasoner, model);
-//
-//        performSPARQLQuery(inf, queryA);
+            // reasoner
+            Reasoner reasonerPellet = PelletReasonerFactory.theInstance().create();
+            InfModel infOpenllet = ModelFactory.createInfModel(reasonerPellet, model);
+            performSPARQLQuery(infOpenllet, queryA);
+        }
+        else {
+            JOptionPane.showMessageDialog(null, "Affichage des infos de la distribution " + obj.getText() + "(not working)");
+        }
 
-        Reasoner reasonerPellet = PelletReasonerFactory.theInstance().create();
-        InfModel infOpenllet = ModelFactory.createInfModel(reasonerPellet, model);
-        //performSPARQLQuery(infOpenllet, queryA);
     }
 }

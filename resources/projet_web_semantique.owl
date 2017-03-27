@@ -26,7 +26,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#baseeSur">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Distribution"/>
         <rdfs:range rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Distribution"/>
     </owl:ObjectProperty>
     
@@ -36,7 +35,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#maintenuePar">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Distribution"/>
         <rdfs:range rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Mainteneur"/>
     </owl:ObjectProperty>
     
@@ -46,7 +44,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#miseAJourTousLes">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Distribution"/>
         <rdfs:range rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#FrequenceMiseAJour"/>
     </owl:ObjectProperty>
     
@@ -56,7 +53,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#modeleEconomiqueEst">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Distribution"/>
         <rdfs:range rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#ModeleEconomique"/>
     </owl:ObjectProperty>
     
@@ -66,7 +62,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#supporteArchitecture">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Distribution"/>
         <rdfs:range rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Architecture"/>
     </owl:ObjectProperty>
     
@@ -76,7 +71,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#supporteLaLangue">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Distribution"/>
         <rdfs:range rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Langue"/>
     </owl:ObjectProperty>
     
@@ -532,6 +526,12 @@
     <!-- http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Professeur_Russe -->
 
     <owl:Class rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Professeur_Russe">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#supporteLaLangue"/>
+                <owl:hasValue rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Russe"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Profil"/>
     </owl:Class>
     
@@ -731,6 +731,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Slackware">
         <rdf:type rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Distribution"/>
+        <supporteLaLangue rdf:resource="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux#Russe"/>
     </owl:NamedIndividual>
     
 
