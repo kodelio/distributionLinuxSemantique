@@ -144,7 +144,7 @@ public class App extends JFrame implements ActionListener {
             performSPARQLQuery(infOpenllet, queryA);
         }
         else {
-            JOptionPane.showMessageDialog(null, "Affichage des infos de la distribution " + obj.getText() + "(not working)");
+            JOptionPane.showMessageDialog(null, "Affichage des infos de la distribution " + obj.getText() + " (not working)");
         }
 
     }

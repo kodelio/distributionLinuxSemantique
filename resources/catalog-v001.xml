@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1490649228220" name="http://www.ema.com/ontologies/series" uri="seriev7.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1490649228220" name="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux" uri="projet_web_semantique.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1490649228220" name="http://www.semanticweb.org/root/ontologies/2017/2/untitled-ontology-5" uri="projet_web_semantique_old.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1490649228220" name="http://www.semanticweb.org/sharispe/ontologies/2017/0/untitled-ontology-25" uri="authors.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1490735048636" name="http://www.infres9.org/rayapoulle/toson/2017/distributionLinux" uri="projet_web_semantique.owl"/>
     </group>
 </catalog>
